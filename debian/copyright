@@ -1,0 +1,9 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: imx-gpu-viv
+Source: https://www.nxp.com/lgfiles/NMG/MAD/YOCTO/imx-gpu-viv-6.2.4.p4.0-aarch32.bin
+
+Files: *
+Copyright: 2019 NXP
+License: LA_OPT_NXP_Software_License
+ See COPYING file
+

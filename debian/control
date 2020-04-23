@@ -1,0 +1,18 @@
+Source: imx-gpu-viv
+Section: graphics
+Priority: optional
+Maintainer: Kory Maincent <kory.maincent@bootlin.com>
+Build-Depends: debhelper (>= 10)
+Standards-Version: 4.1.2
+Homepage: https://www.nxp.com/lgfiles/NMG/MAD/YOCTO/imx-gpu-viv-6.2.4.p4.0-aarch32.bin
+#Vcs-Git: https://anonscm.debian.org/git/collab-maint/imx-gpu-viv.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/imx-gpu-viv.git
+
+Package: imx-gpu-viv
+Architecture: all
+Provides: imx-gpu-viv
+Conflicts: imx-gpu-viv
+Replaces: libgles2-mesa-dev, libgles2-dev, libgl1-mesa-dev, libgl-dev
+Depends: ${misc:Depends}
+Description: Firmware gpu vivante
+ This package provides firmware used by the freescale imx vivante gpu.

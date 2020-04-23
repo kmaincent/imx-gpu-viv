@@ -1,0 +1,5 @@
+imx-gpu-viv (6.2.4.p4.0-aarch32-1) unstable; urgency=medium
+
+  * Initial release
+
+ -- kory maincent <kory.maincent@bootlin.com>  Mon, 20 Apr 2020 12:23:49 +0200
