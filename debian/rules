@@ -33,8 +33,8 @@ install-indep:
 	install -d $(inc_dir)
 	install -d $(lib_dir)
 
-	rsync -a $(CURDIR)/gpu-core/usr/lib/* $(lib_dir)
-	rsync -a $(CURDIR)/gpu-core/usr/include/* $(inc_dir)
+	cp -a $(CURDIR)/gpu-core/usr/lib/* $(lib_dir)
+	cp -a $(CURDIR)/gpu-core/usr/include/* $(inc_dir)
 
 binary-indep: install-indep
 	dh_testdir
