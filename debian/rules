@@ -25,10 +25,10 @@
 inc_dir = $(CURDIR)/debian/imx-gpu-viv/usr/include/$(DEB_HOST_MULTIARCH)/
 lib_dir = $(CURDIR)/debian/imx-gpu-viv/usr/lib/$(DEB_HOST_MULTIARCH)/
 
-install-indep:
+install-arch:
 	dh_testdir
 	dh_testroot
-	dh_prep -i
+	dh_prep -a
 
 	install -d $(inc_dir)
 	install -d $(lib_dir)
@@ -36,19 +36,19 @@ install-indep:
 	cp -a $(CURDIR)/gpu-core/usr/lib/* $(lib_dir)
 	cp -a $(CURDIR)/gpu-core/usr/include/* $(inc_dir)
 
-binary-indep: install-indep
+binary-arch: install-arch
 	dh_testdir
 	dh_testroot
 
-	dh_installchangelogs -i
-	dh_compress -i
-	dh_fixperms -i
-	dh_installdeb -i
-	dh_gencontrol -i
-	dh_md5sums -i
-	dh_builddeb -i
+	dh_installchangelogs -a
+	dh_compress -a
+	dh_fixperms -a
+	dh_installdeb -a
+	dh_gencontrol -a
+	dh_md5sums -a
+	dh_builddeb -a
 
-binary: binary-indep
+binary: binary-arch
 build:
 
 clean:

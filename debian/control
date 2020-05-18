@@ -9,7 +9,7 @@ Homepage: https://www.nxp.com/lgfiles/NMG/MAD/YOCTO/imx-gpu-viv-6.2.4.p4.0-aarch
 #Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/imx-gpu-viv.git
 
 Package: imx-gpu-viv
-Architecture: all
+Architecture: armhf
 Provides: imx-gpu-viv
 Conflicts: imx-gpu-viv
 Replaces: libgles2-mesa-dev, libgles2-dev, libgl1-mesa-dev, libgl-dev
