@@ -12,7 +12,11 @@ Package: imx-gpu-viv
 Architecture: armhf
 Provides: imx-gpu-viv
 Conflicts: imx-gpu-viv
-Replaces: libgles2-mesa-dev, libgles2-dev, libgl1-mesa-dev, libgl-dev
+Replaces: libgles2-mesa-dev, libgles2-dev,
+	libgl1-mesa-dev, libgl-dev,
+	libegl1, libgles2,
+	libgl1, libegl1-mesa-dev,
+	libglvnd-dev
 Depends: ${misc:Depends}
 Description: Firmware gpu vivante
  This package provides firmware used by the freescale imx vivante gpu.
